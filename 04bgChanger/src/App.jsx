@@ -1,0 +1,81 @@
+import { useState } from 'react'
+
+function App() {
+  const [color, setColor] = useState("olive")
+
+  return (
+   <div className="w-full h-screen duration-200"
+   style={{backgroundColor: color}}
+   >
+    <div className="fixed flex flex-wrap 
+    justify-center bottom-12 inset-x-0 px-2">
+      <div className="flex flex-wrap gustify-center
+      gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
+        <button
+        className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "red"}}
+          onClick={() => setColor("red")}
+        >Red</button>
+        <button
+        className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "blue"}}
+          onClick={() => setColor("blue")}
+        >Blue</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "green"}}
+          onClick={() => setColor("green")}
+        >Green</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "olive"}}
+          onClick={() => setColor("olive")}
+        >Olive</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "purple"}}
+          onClick={() => setColor("purple")}
+        >Purple</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "orange"}}
+          onClick={() => setColor("orange")}
+        >Orange</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "pink"}}
+          onClick={() => setColor("pink")}
+        >Pink</button>
+        <button className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "yellow"}}
+          onClick={() => setColor("yellow")}
+        >Yellow</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "brown"}}
+          onClick={() => setColor("brown")}
+        >Brown</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "black"}}
+          onClick={() => setColor("black")}
+        >Black</button>
+        <button className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "gray"}}
+          onClick={() => setColor("gray")}
+        >Gray</button>
+        <button
+         className="outline-none px-4 py-2 text-white rounded-full shadow-lg hover:scale-105 duration-200"
+        style={{backgroundColor: "teal"}}
+          onClick={() => setColor("teal")}
+        >Teal</button>
+        
+      </div>
+
+      </div>
+
+   </div>
+  )
+}
+
+export default App
